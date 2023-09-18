@@ -31,11 +31,11 @@ def get_filters():
             print('Invalid choice. Please enter "month", "day", "both", or "none".')
 
     if filter_choice == 'none':
-        return city, 'All', 'All'
+        return (city, 'All', 'All')
     else:
         month = 'All' if filter_choice in ('day', 'none') else get_month_input()
         day = 'All' if filter_choice in ('month', 'none') else get_day_input()
-        return city, month, day
+        return (city, month, day)
 
 def get_month_input():
     """
@@ -55,7 +55,7 @@ def get_day_input():
     while True:
         day = input('Enter the day of the week (Monday, Tuesday, ..., Sunday): ').title()
         if day in ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'):
-            return day
+            return (day)
         else:
             print('Invalid day of the week. Please enter a valid day.')
 
@@ -84,7 +84,7 @@ def load_data(city, month, day):
     if day != 'All':
         df = df[df['Day of Week'] == day]
     
-    return df
+    return (df)
 
 def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
