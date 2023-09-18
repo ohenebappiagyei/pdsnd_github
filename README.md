@@ -5,7 +5,7 @@ bikeshare.py
 README.md
 
 ### The Udacity Python PDSND
-
+Very easy to use
 
 ### Description
 Bikeshare.py is a program that helps you access the csv files of 3 cities and interactively get the information you need.
