@@ -1,3 +1,4 @@
+.gitignore
 *.csv
 bikeshare_2.py
 bikeshare_plot.py
