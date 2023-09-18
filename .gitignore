@@ -1,1 +1,10 @@
 .github/**
+*.csv
+bikeshare_2.py
+bikeshare_plot.py
+demo.py
+first_script.py
+first-script.py.zip
+my_file.txt
+new_file.py
+some_file.txt
